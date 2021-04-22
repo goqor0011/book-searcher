@@ -1,0 +1,9 @@
+@import '../bookCard/bookCard.css';
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,220px);
+    justify-content: space-around;
+    align-items: start;
+    margin: 20px 10% 5px 10%;
+}

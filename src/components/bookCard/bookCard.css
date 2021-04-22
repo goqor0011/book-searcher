@@ -1,0 +1,64 @@
+.card{
+    background-color: lightgray;
+    display: inline-block;
+    height: auto;
+    width: 200px;
+
+    justify-self: center ;
+
+    border: 1px solid black;
+    border-radius: 3%;
+    margin: 5px;
+
+    box-shadow: 7px 7px 11px 5px rgba(0,0,0,0.48);
+}
+
+.card__link{
+    text-decoration: none;
+    color: black;
+}
+
+
+.card__header{
+    height: auto;
+    width: 100%;
+}
+
+.card__image{
+    height: min-content;
+    width: 100%;
+    border-radius: 3% 3% 0 0;
+}
+
+.card__body{
+    width: auto;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.card__body h3{
+    text-align: center;
+}
+
+.card__body p{
+    text-align: left;
+    margin-top: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.card__hr{
+    background-color: black;
+    height: 1px;
+    border: none;
+}
+
+.card__footer{
+    text-align: center;
+    margin: 10px 0;
+}
+
+

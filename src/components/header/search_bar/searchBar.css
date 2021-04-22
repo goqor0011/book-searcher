@@ -1,0 +1,20 @@
+.header__bar{
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    padding: 10px 0 10px 20%;
+}
+
+.header__bar__input{
+    height: 30px;
+    width: auto;
+}
+
+
+.header__bar__submit-btn{
+    height: 30px;
+    width: 80px;
+}
+.header__bar__suggestions select{
+    width: 100%;
+    border: none;
+}

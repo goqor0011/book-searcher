@@ -1,5 +1,6 @@
 @import "search_bar/searchBar.css";
 
 header{
-    background-color: brown;
+    background-color: cornsilk;
+    box-shadow: 0 0 12px 10px rgba(0,0,0, 0.5);
 }

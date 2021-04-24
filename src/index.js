@@ -1,8 +1,12 @@
 import app from "./app.js"
 
-const $ = (selector) => document.querySelector(selector)
+window.$ = (selector) => document.querySelector(selector)
 
 const root = $('#root')
 
+google.books.load()
+
+
 app(root)
+
 

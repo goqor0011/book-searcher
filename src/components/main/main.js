@@ -1,17 +1,18 @@
-import card from "../bookCard/bookCard.js";
-import searchBook from "../../scripts/scripts.js";
+import {searchResult,load,searchProp} from "../../scripts/scripts.js";
 
-
-
-// const state = await searchBook('j5iJQgAACAAJ')
-const state = await searchBook('www')
-
-let cards = !state.error ? state.items.map((i)=>card(i)).join('') : '404'
+let cards = await searchResult(searchProp)
 
 const main =(context)=> {
-    const main = `<main> ${ cards } </main>`
+    let main = `<main>
+                    <button id="goToMain" class="main-btn"></button>
+                    <div id='content' class='content'></div>
+                </main>`
 
     context.insertAdjacentHTML("beforeend", main)
+
+    load(cards)
+
+    $('#goToMain').onclick = () => { load(cards) }
 
     return ''
 }

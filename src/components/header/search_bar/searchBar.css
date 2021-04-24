@@ -7,13 +7,42 @@
 .header__bar__input{
     height: 30px;
     width: auto;
-}
+    background-color: cornsilk;
+    border-radius: 10px;
+    border: 2px solid #c4b477;
 
+    padding-left: 10px;
+
+    font-size: 20px;
+}
+.header__bar__input:focus{
+    outline: none;
+    border-color: #d6c47a;
+}
 
 .header__bar__submit-btn{
-    height: 30px;
-    width: 80px;
+    border-radius: 10px;
+    background-color: #e8dcab;
+    border-color: #e8dcab;
+    text-align: center;
+    color: #555351;
+    width: 30%;
+    margin-left: 1%;
+    border-style: solid;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
 }
+
+.header__bar__submit-btn:hover{
+    background-color: #d6c47a;
+}
+
+.header__bar__submit-btn:focus{
+    outline: none;
+    background-color: #d6c47a;
+}
+
 .header__bar__suggestions select{
     width: 100%;
     border: none;

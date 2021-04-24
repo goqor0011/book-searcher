@@ -1,9 +1,28 @@
 @import '../bookCard/bookCard.css';
 
-main{
+main {
     display: grid;
-    grid-template-columns: repeat(auto-fill,220px);
-    justify-content: space-around;
+    grid-template-columns: min-content auto;
+    padding: 3% 5% 3% 0;
+}
+
+.content {
+    display: grid;
     align-items: start;
-    margin: 20px 10% 5px 10%;
+    padding: 3% 3%;
+    background-color: lightyellow;
+    border: 2px solid black;
+    box-shadow: 0 0 12px 10px rgba(0, 0, 0, 0.48);
+}
+
+.main-btn {
+    width: 100px;
+    height: 100%;
+    font-size: 80px;
+    min-width: 100px;
+    color: #888775;
+}
+
+.main-btn:hover {
+    cursor: pointer;
 }
